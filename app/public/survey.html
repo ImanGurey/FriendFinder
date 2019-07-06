@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Survey</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Bungee|Raleway" rel="stylesheet">
+    </head>
+    
+    <style>
+        body {
+            background-image: url("http://i63.tinypic.com/2hpreo4.jpg");
+            border-width: 50px;
+            border-style: solid;
+            border-color:hsla(0, 40%, 81%, 0.967);
+            font-family: 'Raleway', sans-serif;
+            color: #4E6766;
+            padding: 0;
+            margin: 0;
+        }
+    
+        h1 {
+            margin-top: 20px;
+            color: #FF8360;
+            font-size: 40px;
+            font-family: 'Bungee', cursive;
+        }
+    
+        a {
+            color: #FF8360;
+            font-style: bold;
+        }
+    
+        a:hover {
+            color: #1E152A;
+            font-style: bold;
+        }
+    
+        .btn {
+            background-color: #E8E288;
+            color: #1E152A;
+            border-color: #1E152A;
+        }
+    
+        .btn:hover {
+            background-color: #FF8360;
+            color: #1E152A;
+            border-color: #1E152A;
+        }
+    
+        .modal-content {
+            background-image: url("http://i63.tinypic.com/2hpreo4.jpg");
+            border-width: 20px;
+            border-style: solid;
+            border-color: #E8E288;
+            font-family: 'Raleway', sans-serif;
+            color: #4E6766;
+            padding: 0;
+            margin: 0;
+        }
+    
+        #matchImg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+    
+    <body>
+        <div class="container">
+            <h1 class="text-center">Survey Questions</h1>
+            <p class="text-center">All fields are required!</p>
+            <hr>
+            <h5>
+                <strong>Name</strong>
+            </h5>
+            <input type="text" id="name" class="form-control" required>
+            <br>
+            <h5>
+                <strong>Link to Photo Image</strong>
+            </h5>
+            <input type="text" id="photo" class="form-control" required>
+            <hr>
+    
+            <form group id="q1">
+                <h5>
+                    <strong>Question 1: </strong>You feel energized when interacting with other people; being alone for
+                    extended periods
+                    of time drains your energy.</h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionOne" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">1--Strongly Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionOne" id="inlineRadio2" value="2">
+                    <label class="form-check-label" for="inlineRadio2">2--Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionOne" id="inlineRadio3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">3--Neutral</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionOne" id="inlineRadio3" value="4">
+                    <label class="form-check-label" for="inlineRadio3">4--Agree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionOne" id="inlineRadio3" value="5">
+                    <label class="form-check-label" for="inlineRadio3">5--Strongly Agree</label>
+                </div>
+            </form>
+            <br>
+            <br>
+    
+            <form group id="q2">
+                <h5>
+                    <strong>Question 2: </strong>You consider yourself to be more practical than artistic.</h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionTwo" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">1--Strongly Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionTwo" id="inlineRadio2" value="2">
+                    <label class="form-check-label" for="inlineRadio2">2--Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionTwo" id="inlineRadio3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">3--Neutral</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionTwo" id="inlineRadio3" value="4">
+                    <label class="form-check-label" for="inlineRadio3">4--Agree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionTwo" id="inlineRadio3" value="5">
+                    <label class="form-check-label" for="inlineRadio3">5--Strongly Agree</label>
+                </div>
+            </form>
+            <br>
+            <br>
+    
+            <form group id="q3">
+                <h5>
+                    <strong>Question 3: </strong>You enjoy a wide variety of foods and would be open to trying new things.
+                </h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionThree" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">1--Strongly Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionThree" id="inlineRadio2" value="2">
+                    <label class="form-check-label" for="inlineRadio2">2--Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionThree" id="inlineRadio3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">3--Neutral</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionThree" id="inlineRadio3" value="4">
+                    <label class="form-check-label" for="inlineRadio3">4--Agree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionThree" id="inlineRadio3" value="5">
+                    <label class="form-check-label" for="inlineRadio3">5--Strongly Agree</label>
+                </div>
+            </form>
+            <br>
+            <br>
+    
+            <form group id="q4">
+                <h5>
+                    <strong>Question 4: </strong>You are a thrill seeker and enjoy roller coasters. You might be open to
+                    skydiving, whitewater
+                    rafting, etc.</h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionFour" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">1--Strongly Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionFour" id="inlineRadio2" value="2">
+                    <label class="form-check-label" for="inlineRadio2">2--Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionFour" id="inlineRadio3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">3--Neutral</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionFour" id="inlineRadio3" value="4">
+                    <label class="form-check-label" for="inlineRadio3">4--Agree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionFour" id="inlineRadio3" value="5">
+                    <label class="form-check-label" for="inlineRadio3">5--Strongly Agree</label>
+                </div>
+            </form>
+            <br>
+            <br>
+    
+            <form group id="q5">
+                <h5>
+                    <strong>Question 5: </strong>You believe a fun night out includes alcohol! Cheers!</h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionFive" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">1--Strongly Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionFive" id="inlineRadio2" value="2">
+                    <label class="form-check-label" for="inlineRadio2">2--Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionFive" id="inlineRadio3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">3--Neutral</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionFive" id="inlineRadio3" value="4">
+                    <label class="form-check-label" for="inlineRadio3">4--Agree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionFive" id="inlineRadio3" value="5">
+                    <label class="form-check-label" for="inlineRadio3">5--Strongly Agree</label>
+                </div>
+            </form>
+            <br>
+            <br>
+    
+            <form group id="q6">
+                <h5>
+                    <strong>Question 6: </strong>You are rarely upset and able to roll with the punches.</h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionSix" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">1--Strongly Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionSix" id="inlineRadio2" value="2">
+                    <label class="form-check-label" for="inlineRadio2">2--Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionSix" id="inlineRadio3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">3--Neutral</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionSix" id="inlineRadio3" value="4">
+                    <label class="form-check-label" for="inlineRadio3">4--Agree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionSix" id="inlineRadio3" value="5">
+                    <label class="form-check-label" for="inlineRadio3">5--Strongly Agree</label>
+                </div>
+            </form>
+            <br>
+            <br>
+    
+            <form group id="q7">
+                <h5>
+                    <strong>Question 7: </strong>You enjoy watching sports and think that going to a game would be a fun
+                    outing.</h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionSeven" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">1--Strongly Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionSeven" id="inlineRadio2" value="2">
+                    <label class="form-check-label" for="inlineRadio2">2--Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionSeven" id="inlineRadio3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">3--Neutral</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionSeven" id="inlineRadio3" value="4">
+                    <label class="form-check-label" for="inlineRadio3">4--Agree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionSeven" id="inlineRadio3" value="5">
+                    <label class="form-check-label" for="inlineRadio3">5--Strongly Agree</label>
+                </div>
+            </form>
+            <br>
+            <br>
+    
+            <form group id="q8">
+                <h5>
+                    <strong>Question 8: </strong>You find it easy to stay relaxed and focused even when there is some
+                    pressure.</h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionEight" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">1--Strongly Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionEight" id="inlineRadio2" value="2">
+                    <label class="form-check-label" for="inlineRadio2">2--Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionEight" id="inlineRadio3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">3--Neutral</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionEight" id="inlineRadio3" value="4">
+                    <label class="form-check-label" for="inlineRadio3">4--Agree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionEight" id="inlineRadio3" value="5">
+                    <label class="form-check-label" for="inlineRadio3">5--Strongly Agree</label>
+                </div>
+            </form>
+            <br>
+            <br>
+    
+            <form group id="q9">
+                <h5>
+                    <strong>Question 9: </strong>It is often difficult for you to relate to other people’s feelings.</h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionNine" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">1--Strongly Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionNine" id="inlineRadio2" value="2">
+                    <label class="form-check-label" for="inlineRadio2">2--Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionNine" id="inlineRadio3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">3--Neutral</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionNine" id="inlineRadio3" value="4">
+                    <label class="form-check-label" for="inlineRadio3">4--Agree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionNine" id="inlineRadio3" value="5">
+                    <label class="form-check-label" for="inlineRadio3">5--Strongly Agree</label>
+                </div>
+            </form>
+            <br>
+            <br>
+    
+            <form group id="q10">
+                <h5>
+                    <strong>Question 10: </strong>You think that everyone’s views should be respected regardless of whether
+                    they are
+                    similar to your own.</h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionTen" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">1--Strongly Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionTen" id="inlineRadio2" value="2">
+                    <label class="form-check-label" for="inlineRadio2">2--Disagree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="questionTen" id="inlineRadio3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">3--Neutral</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="4">
+                    <label class="form-check-label" for="inlineRadio3">4--Agree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="5">
+                    <label class="form-check-label" for="inlineRadio3">5--Strongly Agree</label>
+                </div>
+            </form>
+            <br>
+            <br>
+    
+            <button type="submit" class="btn btn-lg btn-block" id="submit">
+                Submit</button>
+    
+            <footer class="footer text-center">
+                <div class="container">
+                    <p>
+                        <a href="/api/friends">API Friends List</a> |
+                        <a href="https://github.com/imangurey/FriendFinder">GitHub Repo</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    
+    
+    
+    
+    
+        <div id="resultsModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title text-center">MATCH MADE!</h1>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="matchName" class="text-center"></h2>
+                        <img id="matchImg" src="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    
+        <script type="text/javascript">
+            $("#submit").on("click", function () {
+                event.preventDefault();
+                function checkCompletion() {
+                    var complete = true;
+                    $(".form-control").each(function () {
+                        if ($(this).val() === "") {
+                            complete = false;
+                        }
+                    });
+                    if ($("input[name='questionOne']:checked").val() === "") {
+                        complete = false;
+                    }
+                    if ($("input[name='questionTwo']:checked").val() === "") {
+                        complete = false;
+                    }
+                    if ($("input[name='questionThree']:checked").val() === "") {
+                        complete = false;
+                    }
+                    if ($("input[name='questionFour']:checked").val() === "") {
+                        complete = false;
+                    }
+                    if ($("input[name='questionFive']:checked").val() === "") {
+                        complete = false;
+                    }
+                    if ($("input[name='questionSix']:checked").val() === "") {
+                        complete = false;
+                    }
+                    if ($("input[name='questionSeven']:checked").val() === "") {
+                        complete = false;
+                    }
+                    if ($("input[name='questionEight']:checked").val() === "") {
+                        complete = false;
+                    }
+                    if ($("input[name='questionNine']:checked").val() === "") {
+                        complete = false;
+                    }
+                    if ($("input[name='questionTen']:checked").val() === "") {
+                        complete = false;
+                    }
+                    return complete;
+                };
+                if (checkCompletion()) {
+                    var surveyData = {
+                        name: $("#name").val(),
+                        photo: $("#photo").val(),
+                        scores: [$("input[name='questionOne']:checked").val(),
+                        $("input[name='questionTwo']:checked").val(),
+                        $("input[name='questionThree']:checked").val(),
+                        $("input[name='questionFour']:checked").val(),
+                        $("input[name='questionFive']:checked").val(),
+                        $("input[name='questionSix']:checked").val(),
+                        $("input[name='questionSeven']:checked").val(),
+                        $("input[name='questionEight']:checked").val(),
+                        $("input[name='questionNine']:checked").val(),
+                        $("input[name='questionTen']:checked").val()]
+                    };
+                    $.post("/api/friends", surveyData, function (data) {
+                        $("#matchName").text(data.name);
+                        $("#matchImg").attr("src", data.photo);
+                        $("#resultsModal").modal("toggle");
+                    });
+                } else {
+                    alert("All forms are required!")
+                }
+            });
+        </script>
+    
+    
+    </body>
+    
+    </html>
+
