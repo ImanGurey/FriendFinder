@@ -1,3 +1,4 @@
 # FriendFinder
 
-https://dashboard.heroku.com/apps/imanfriendfinder1app
+
+imanfriendfinder1app
