@@ -1,8 +1,9 @@
+// ARRAY OF FRIENDS TO MATCH WITH
 var friendsArray = [
     {
-        name: 'Captain',
-        score: "https://usercontent1.hubstatic.com/13010318_f520.jpg",
-        "scores": [
+        name: "Captain America",
+        photo: "https://usercontent1.hubstatic.com/13010318_f520.jpg",
+        scores: [
             '3',
             '2',
             '5',
@@ -16,5 +17,14 @@ var friendsArray = [
         ]
     }
 ]
+
+
+    
+    
+    
+    
+
+
+
 
 module.exports = friendsArray;
