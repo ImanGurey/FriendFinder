@@ -4,7 +4,7 @@
 For this assignment, we were asked to create a compatibility-based FriendFinder. This application asks users to take a 10-question survey and then compares their answers to other users to find the best match.
 
 
-Getting Started
+**Getting Started**
 
 
 This application is hosted on Heroku! Click the link below for a demo!
@@ -19,17 +19,17 @@ Please note, all fields are required!
 
 
 
-Built With
+**Built With**
 
-Node.js
+* Node.js
 
-Express NPM Package
+* Express NPM Package
 
-Body-Parser NPM Package
+* Body-Parser NPM Package
 
-Path NPM Package
+* Path NPM Package
 
-Twitter-Bootstrap - Framework
+* Twitter-Bootstrap - Framework
 
 
 
